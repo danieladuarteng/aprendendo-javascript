@@ -15,7 +15,12 @@ Isso acaba sendo uma das maneiras práticas de contribuir com a comunidade e apr
 
 JavaScript ou JS é uma linguagem de programação dinâmica, ou seja, que se adapta rápido as mudanças, assim ela proporciona interações ao seu site quando aplicada a um documento HTML.
 
-## Declarações
+
+## Sumário
+* [Declarações](#id01)
+* [Tipo de dados](#id02)
+
+## Declarações <a name="id01"></a>
 
 Para armazenar valores, existem 3 tipos de declarações que podemos usar no JavaScript, cada uma com seu propósito:
 
@@ -91,7 +96,7 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
    const soma = 15 + 8;
    ```
 
-## Tipos de dados
+## Tipos de dados <a name="id02"></a>
 
    Além dos tipos de declaração, também existe os tipos de dados/valores que podem ser armazenados nessas declarações.
 
