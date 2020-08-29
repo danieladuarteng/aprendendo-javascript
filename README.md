@@ -143,8 +143,37 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
           }
         };
         ```
+        
+        *Para acessar uma propriedade do objeto basta colocar o nomeDoObjeto.nomeDaPropriedade que você quer acessar.
+        
+        Exemplo:
+        
+        Quero acessar o nome do objeto pessoa coloco assim:
+        
+        `pessoa.nome // será exibido Dani`
+        
+        Também temos a opção de acessar o objeto como acessado um array, porém é usado em casos mais específicos:
+        
+        `pessoa['nome'] // será exibodo Dani`
+        
       * **array**: é um objeto global usado na construção de listas:
 
         ```javascript
         const frutas = ['morango', 'laranja', 'banana'];
         ```
+        
+        *Para acessar uma propriedade do array, basta colocar o `nomeDoArray[índice]`, o índice é a ordem em que a propriedade está, que é sempre iniciada com o valor 0.
+        
+        Exemplo:
+        
+        Quero como retorno morango, e ele é o primeiro item coloco assim:
+        
+        ```javascript
+         /* Como quero o primeiro item e o índice 
+         começa com zero, coloco o zero no 
+         valor do índice e é exibido morango` */
+         frutas[0]
+        ```
+
+        
+        
