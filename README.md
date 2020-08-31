@@ -19,6 +19,7 @@ JavaScript ou JS é uma linguagem de programação dinâmica, ou seja, que se ad
 ## Sumário
 * [Declarações](#id01)
 * [Tipo de dados](#id02)
+* [Operações aritméticas](#id03)
 
 ## Declarações <a name="id01"></a>
 
@@ -174,6 +175,33 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
          valor do índice e é exibido morango` */
          frutas[0]
         ```
-
         
+## Operações aritméticas <a name="id03"></a>
+        
+Outra coisa que podemos fazer com as declarações, é armazenar cálculos nelas por meio das operações aritméticas:
+
+## Somar
+
+Exemplo:
+
+`let resultado = 15 + 8;`
+
+Agora se quisermos somar o valor de `resultado`com mais 1, podemos fazer assim:
+
+`resultado++ // aqui é lido o valor de resultado primeiro e depois é adicionado mais 1 ao valor`
+
+ou
+
+`++resultado // aqui adiciona primeiro o valor 1 e depois o soma com o valor de resultado`
+
+E se quisermos subtrair o valor de `resultado`por menos 1, é só trocar o + pelo -
+
+Porém se quisermos, adicionar um valor diferente de 1, seja somando, subtraindo, multiplicando, ou dividindo o valor de soma, podemos fazer também de um forma reduzida, conforme mostrado na tabela abaixo:
+
+| Normal              | Abreviado    |
+| ------------------- | ------------ |
+| `resultado = resultado + 3` | `resultado += 3` |
+| `resultado = resultado - 3` | `resultado -= 3` |
+| `resultado = resultado * 3` | `resultado *= 3` |
+| `resultado = resultado / 3` | `resultado /= 3` |
         
