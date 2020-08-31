@@ -180,8 +180,6 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
         
 Outra coisa que podemos fazer com as declarações, é armazenar cálculos nelas por meio das operações aritméticas:
 
-## Somar
-
 Exemplo:
 
 `let resultado = 15 + 8;`
