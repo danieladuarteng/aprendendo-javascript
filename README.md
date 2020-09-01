@@ -34,6 +34,7 @@ Como fica no código:
 **var** *pessoa* = **'Daniela'**
 
 
+
 Existem 3 tipos de declarações que podemos usar no JavaScript, cada uma com seu propósito:
 
    O tipo **VAR** é utilizado quando queremos guardar um valor que vai estar disponível para acessá-lo e alterá-lo em qualquer lugar do código, seu uso é bem perigoso, pois pode ser alterado em qualquer lugar e momento do código o que pode gerar erros, por isso não é recomendado seu uso.
