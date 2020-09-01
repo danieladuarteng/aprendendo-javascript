@@ -33,7 +33,7 @@ Como fica no código:
 
 **var** *pessoa* = **'Daniela'**
 
-
+### Tipos de declarações
 
 Existem 3 tipos de declarações que podemos usar no JavaScript, cada uma com seu propósito:
 
