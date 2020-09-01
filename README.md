@@ -17,20 +17,33 @@ JavaScript ou JS é uma linguagem de programação dinâmica, ou seja, que se ad
 
 
 ## Sumário
-* [Declarações](#id01)
-* [Tipo de dados](#id02)
-* [Operações aritméticas](#id03)
+* [Como guardar valores?](#id01)
+* [Quais valores posso guardar?](#id02)
+* [Como fazer contas com esses valores?](#id03)
 
-## Declarações <a name="id01"></a>
+## Como guardar valores? <a name="id01"></a>
 
-Para armazenar valores, existem 3 tipos de declarações que podemos usar no JavaScript, cada uma com seu propósito:
+Para guardar valores, seja para fazer um cálculo com ele ou mesmo enviar para o servidor, utilizamos declarações, que são estruturas compostas por tipo, nome e valor.
 
-1. **Como declarar um valor global, ou seja, que esteja disponível em qualquer lugar do código, e ainda possa ser alterada a qualquer momento?**
+### Estrutura de uma declaração:
 
-   Utilize a palavra reservada VAR, seu uso é bem perigoso, pois como dito anteriormente pode ser alterado em qualquer lugar e momento do código, por isso não é recomendado seu uso.
-2. **Ok, não é recomendado usar o VAR, mas então o que uso caso precise armazenar um valor que vai ser alterado futuramente?**
+**tipo** *nomeDaDeclaracao* = **valorDaDeclaracao**
 
-   Use o LET, pois ela pode ser alterada sempre que necessário, porém somente dentro do seu escopo ou bloco.
+Como fica no código:
+
+**var** *pessoa* = **'Daniela'**
+
+Existem 3 tipos de declarações que podemos usar no JavaScript, cada uma com seu propósito:
+
+   O tipo **VAR** é utilizado quando queremos guardar um valor que vai estar disponível para acessá-lo e alterá-lo em qualquer lugar do código, seu uso é bem perigoso, pois pode ser alterado em qualquer lugar e momento do código o que pode gerar erros, por isso não é recomendado seu uso.
+   
+   Exemplo: 
+   `var valorInicial = 0;`
+   
+   
+   Ok, não é recomendado usar o VAR, mas então o que uso caso precise armazenar um valor que vai ser alterado futuramente?
+
+   Use o **LET**, pois esse tipo pode ser alterado sempre que necessário, porém somente dentro do seu escopo ou bloco.
 
    Exemplo:
 
@@ -83,9 +96,9 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
    ou seja declarado */
    console.log(valorInicial) // valorInicial is not defined
    ```
-3. **E se eu quiser declarar um valor que não vai mudar?**
+   E se eu quiser declarar um valor que não vai mudar?
 
-   Eu uso a CONST, pois ela só pode ser criada uma vez, e é obrigatório a atribuição de um valor inicial a ela, diferente da VAR e LET, pois quando criada ela somente pode ser lida e não alterada.
+   Use o **CONST**, com esse tipo a declaração só pode ser criada uma vez com o seu um valor inicial, podendo ser lida e nunca alterado seu valor.
    
    Exemplo:
 
@@ -97,9 +110,9 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
    const soma = 15 + 8;
    ```
 
-## Tipos de dados <a name="id02"></a>
+## Quais valores posso guardar? <a name="id02"></a>
 
-   Além dos tipos de declaração, também existe os tipos de dados/valores que podem ser armazenados nessas declarações.
+   Além dos tipos de declaração, também existe os tipos de valores/dados que podem ser armazenados nessas declarações.
 
    Exemplo:
 
@@ -110,7 +123,7 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
    let minhaVariavel = 2;
    ```
 
-   Os tipos de dados, são classificados por dois tipos:
+   Os tipos de valores, são classificados por dois tipos:
 
    1. Tipo primitivo:
 
@@ -130,7 +143,7 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
 
         `let a;`
 
-   2. Tipo primitivo:
+   2. Tipo objeto:
 
       * **object**: guarda um conjunto de propriedades (que podem ser tanto de tipo primitivo ou objeto) e métodos que representam o mundo real:
       
@@ -176,10 +189,10 @@ Para armazenar valores, existem 3 tipos de declarações que podemos usar no Jav
          frutas[0]
         ```
         
-## Operações aritméticas <a name="id03"></a>
-        
-Outra coisa que podemos fazer com as declarações, é armazenar cálculos nelas por meio das operações aritméticas:
+## Como fazer contas com esses valores? <a name="id03"></a>
 
+Além de armazenar valores, por meio das declarações também conseguimos fazer contas, entre uma declaração e outra ou atribuindo valores números a uma declaração.
+       
 Exemplo:
 
 `let resultado = 15 + 8;`
