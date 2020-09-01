@@ -19,7 +19,8 @@ JavaScript ou JS é uma linguagem de programação dinâmica, ou seja, que se ad
 ## Sumário
 * [Como guardar valores?](#id01)
 * [Quais valores posso guardar?](#id02)
-* [Como fazer contas com esses valores?](#id03)
+* [Como fazer contas?](#id03)
+* [Como fazer comparações](#id04)
 
 ## Como guardar valores? <a name="id01"></a>
 
@@ -191,7 +192,7 @@ Existem 3 tipos de declarações que podemos usar no JavaScript, cada uma com se
          frutas[0]
         ```
         
-## Como fazer contas com esses valores? <a name="id03"></a>
+## Como fazer contas? <a name="id03"></a>
 
 Além de armazenar valores, por meio das declarações também conseguimos fazer contas, entre uma declaração e outra ou atribuindo valores números a uma declaração.
        
@@ -218,3 +219,65 @@ Porém se quisermos, adicionar um valor diferente de 1, seja somando, subtraindo
 | `resultado = resultado * 3` | `resultado *= 3` |
 | `resultado = resultado / 3` | `resultado /= 3` |
         
+## Como fazer comparações? <a name="id04"></a>
+
+Utilizamos os seguintes operações para fazer comparações entre declarações:
+
+| Operadores | Funcionalidade                                            |
+| ---------- | --------------------------------------------------------- |
+| `==`       | Verifica se as declarações possuem o mesmo valor          |
+| `===`      | Verifica se as declarações possuem o mesmo valor e tipo   |
+| `!=`       | Verifica se as declarações tem valores diferentes         |
+| `!==`      | Verifica se as declarações tem valores e tipos diferentes |
+| `>`        | Verifica se uma declaração é maior que a outra            |
+| `<`        | Verifica se uma declaração é menor que a outra            |
+| `>=`       | Verifica se uma declaração é maior ou igual que a outra   |
+| `<=`       | Verifica se uma declaração é menor ou igual que a outra   |
+
+\*Cada operação retorna o valor de true ou false, para ver se a comparação atendeu o critério
+
+Exemplos:
+
+```javascript
+const primeiroValor = 1;
+const segundoValor = 2;
+
+/* Aqui o resultado será true, porque a declaração
+primeiroValor tem o valor 1 e está sendo comparado
+com outro valor 1, e só estamos verificando o seu 
+valor e não seu tipo */
+primeiroValor == '1' // true
+
+/* Agora aqui estamos comparando 
+além do seu valor seu tipo, por 
+isso agora o resultado foi false */
+primeiroValor === '1' // false
+
+/* Aqui quando verificamos se os valores são 
+diferentes é exibido false, pois estamos só 
+comparando os valores */
+primeiroValor != '1' // false
+
+/* Agora colocando dois iguais, o resultado
+é true pois estamos comparando valor e tipo */
+primeiroValor !== '1' // true
+
+/* Aqui verificamos se o primeiroValor é maior
+que o segundoValor, e o resultado é false pois
+o primeiroValor é 1 e o segundoValor é 2 */
+primeiroValor > segundoValor // false
+
+/* Vamos verificar se o segundoValor é menor
+que o primeiroValor, resultado será false */
+segundoValor <  primeiroValor // false
+
+/* Aqui vamos verificar se o segundoValor é
+maior ou igual a 2, e o resultado será true */
+segundoValor >= 2 // true
+
+/* E por fim verificar se o primeiroValor, 
+é menor ou igual ao segundoValor, e o resultado
+será true, pois atende o requisito de ser menor */
+primeiroValor <= 2 // true
+
+```
